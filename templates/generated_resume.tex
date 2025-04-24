@@ -1,0 +1,186 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape John Doe} \\ \vspace{1pt}
+    \small (555) 555-5555 $|$ \href{mailto:john.doe@email.com}{\underline{john.doe@email.com}} $|$ 
+    \href{linkedin.com/in/johndoe}{\underline{linkedin.com/in/johndoe}} $|$
+    \href{github.com/johndoe}{\underline{github.com/johndoe}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{I’m a data scientist looking to use data to solve real-world problems. Skilled in machine learning, data analysis, and building models to make sense of big data. I want to use my skills to help organizations make data-driven decisions.}
+\end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {M.S. in Data Science}{XYZ University}
+      {}{2022}
+    \resumeSubheading
+      {B.S. in Computer Science}{ABC University}
+      {}{2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Scientist Intern}{XYZ Tech Company}
+      {}{2021}
+      \resumeItemListStart
+        \resumeItem{Analyzed customer data to identify behavior patterns and trends.}
+        \resumeItem{Built machine learning models to predict customer churn.}
+        \resumeItem{Created data visualizations and dashboards using Tableau for internal teams.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Data Analyst}{ABC Analytics}
+      {}{2020}
+      \resumeItemListStart
+        \resumeItem{Extracted, cleaned, and analyzed data using SQL and Python.}
+        \resumeItem{Developed reports and visualizations to provide actionable insights for clients.}
+        \resumeItem{Built a predictive model for sales forecasting using linear regression.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Customer Segmentation}}{}
+          \resumeItemListStart
+            \resumeItem{Applied K-Means clustering to segment customers based on purchasing behavior.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sales Forecasting Model}}{}
+          \resumeItemListStart
+            \resumeItem{Built a linear regression model to predict future sales with 85\% accuracy.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sentiment Analysis on Social Media Data}}{}
+          \resumeItemListStart
+            \resumeItem{Used NLP techniques to analyze social media posts for sentiment.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, R, SQL, Java, Pandas, NumPy, Scikit-learn, TensorFlow, Keras, XGBoost, Matplotlib, Seaborn, Tableau, MySQL, PostgreSQL, MongoDB, Git, Jupyter, Docker, Hadoop, AWS, Google Cloud} 
+    }}
+ \end{itemize}
+
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{Data Science Specialization (Coursera)}
+    \item \small{Machine Learning by Andrew Ng (Coursera)}
+    \item \small{AWS Certified Machine Learning - Specialty}
+\end{itemize}
+
+\section{Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{Kaggle competitions}
+    \item \small{Open-source contributions}
+    \item \small{Hiking}
+    \item \small{Photography}
+    \item \small{Blogging about data science}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
